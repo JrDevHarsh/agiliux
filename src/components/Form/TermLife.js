@@ -80,6 +80,10 @@ function TermLifeForm() {
         <span className="pink__underline"> Disclaimers</span>
       </p>
       <PreviewQuotesButton />
+      <div className="message">
+        <img src="/images/icons/lock.svg" alt="img-of-lock" />
+        <p className="text">Your personal information is secure with us</p>
+      </div>
     </form>
   );
 }
