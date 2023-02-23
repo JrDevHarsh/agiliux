@@ -1,0 +1,65 @@
+.feat__card {
+  --width: 190px;
+  --height: 190px;
+  display: inline-block;
+  max-width: var(--width);
+  width: 100%;
+  max-height: var(--height);
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px 0 var(--secondary-gray-1);
+  overflow: hidden;
+}
+
+.feat__box,
+.feat__content,
+.feat__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.feat__box:focus-visible{
+    outline: 2px solid red;
+}
+
+.feat__box {
+  padding: 1.25rem 0.25rem;
+  background-color: var(--primary-white-1);
+}
+
+.feat__img {
+  --width: 54px;
+  --height: 74px;
+  text-align: center;
+  width: var(--width);
+  height: var(--height);
+}
+
+.feat__img img {
+  width: 100%;
+  height: auto;
+}
+
+.feat__details {
+  margin-top: 1.5rem;
+}
+
+.feat__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--primary-gray-1);
+}
+
+.feat__info {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--primary-gray-1);
+}

@@ -1,0 +1,62 @@
+.home__main {
+  position: relative;
+  background: url("../../../public/images/mother_and_child.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main__container {
+  margin: 0 auto;
+  padding: 8rem 1.5rem 2rem;
+  max-width: var(--screen-3xl);
+  width: 100%;
+}
+
+.container__box {
+  padding: 1rem;
+  max-width: var(--screen-lg);
+  width: 100%;
+}
+
+.title__h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.stats__row {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.stat__img {
+  width: 32px;
+  height: 32px;
+}
+
+.stat__text {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: currentColor;
+  width: 40%;
+}
+
+.stat__text .pink {
+  color: var(--primary-pink-1);
+}

@@ -1,0 +1,163 @@
+/* header styles */
+.header__top {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--primary-white-1);
+  box-shadow: 0 2px 10px 0 var(--secondary-gray-1);
+  z-index: 5;
+}
+
+.header__navbar {
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--screen-3xl);
+  width: 100%;
+}
+
+.navbar__left {
+  width: auto;
+}
+
+.main__logo_link {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue-1);
+  width: auto;
+}
+
+.main__logo_link::after {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  content: "TM";
+  width: 20px;
+  height: 2px;
+  font-size: 10px;
+  font-weight: 500;
+  color: currentColor;
+}
+
+.main__logo_text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: currentColor;
+}
+
+.main__logo_text.spec {
+  position: relative;
+}
+
+.main__logo_text.spec::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: var(--primary-white-1);
+}
+
+.main__logo_text.spec::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 1px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-pink-1);
+  border-radius: 50%;
+}
+
+.navbar__right,
+.menu__list {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.navbar__right {
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.menu__list {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu__item {
+  width: auto;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  color: var(--primary-gray-1);
+  width: auto;
+}
+
+.menu__link .text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: currentColor;
+  letter-spacing: 0.5px;
+}
+
+.menu__link:hover,
+.menu__link:focus-visible {
+  color: #4e4e4e;
+}
+
+.menu__link .arrow__down {
+  display: inline-block;
+  margin-left: 4px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-top: 0px;
+  border-left: 0px;
+  transform: translate(0, -2px) rotate(45deg);
+  transition: transform 150ms ease;
+}
+
+.menu__link:hover .arrow__down,
+.menu__link:focus-visible .arrow__down {
+  transform: translate(0, 2px) rotate(225deg);
+}
+
+.btn__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.btn__signup {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--primary-white-1);
+  background-color: var(--primary-blue-2);
+  border-radius: 1rem;
+}
+
+.btn__signup:hover {
+  background-color: var(--primary-blue-1);  
+}
